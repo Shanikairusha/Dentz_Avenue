@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dentz-avenue-managment-system",
+  "private_key_id": "f44f5b3945a4dd23fd1d0d7aace0c841b9159de6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDCeEkGWG5fDYs1\nZ5pTdCNM0K6PVEoUaDGqgPoohbjw2f6zUOEWNsS35gvg1zhiOS5k+5PqalxB4hXW\nhq9ruB2pJu/Go+ePEgbUZlUQ4WTHiCVO9NBmSNsehj66vJXOmIzrFm9xTZrbqqq6\nDEf54H+8SpPWjSR5PYrpru6AW0hQz2iwTO4q4hvhYpmDfjED3Si//41BNEeOt0xs\npBtGTi1KMd0TdahqSY83U3uH+1X/2iXGC+MXA1rEPq/f/PlbWKDEM2gMJBbYMAJY\n71vi+uNaGEdGmKint+GNv/p8LPWrycQnidkYK+eEMNPhfhLWyD9VKhFDwVtynnZB\nzQ6uW6AfAgMBAAECggEAM0MY4MrTwUulK/004ZXGLlv9/7s00d9LZEoeZyskvpyA\nNs11n/Ds9xr1e53P95hiIe1tJshFrHpHzmZvfGIqs2mXoBGZmw2h7kBRYSNA+RXq\n277N5oCC/i9d/sRyauSslNWzp7bQwOHioitVl8k1crFn+hD3kdwGr6XUqdImJGKq\ncDFNsvZctiVRMK/OXMHZINEBHi7PxlfCGTprNbTcoo8ZHzbVCsphVy0zYPmsO8vz\nVyCDkfux9UJFVvbjw5ao0fuIkBr8KFJKwX/iXuUxujYDoPHALzVv1+/mNaCUxZIv\nhsyNQ4wjlsRTxTfRSgAVTnHAWF/4qFAs9l8xTNLu7QKBgQDgR2mtcZXRtf32Dphb\nFmg92KA0pDmJPQRrnV8gNHxQ6va5U2vpdqiaz8p4RXtnpCjiFtZmxe3tDjwNxh/w\nevhk7uFT41wvoQTYbQN4kYxv0EMdLA4pELjhjVPSAAGqxokpdTwNrV/rTA+cUOoh\nMFmUm6K9um1iniQDwx3c6rt29QKBgQDd+Y8P6Dw5RMjUegwedOVx5F6kqtI3CYQ4\n8aQf/QzizfH981OAhrSJH7GT+fB36bgjYs5WWfD7n2iN+Unf29PlE0PM3zwucb9h\nBT6V4umufQ4ug0nhMZFgyqvrtLKzHtLTe1zMLcouyC7uYc8SAmgCPk98OgVs1XGp\nwMQUKeLGQwKBgQDD3/q+nSYAupZrkIGlg+NUqF36u7b4Ug8LQa0zvkMYlK0YXHAx\nvQ0x7+pfsic99BQ0qUdlCNZsI/N1ACUi7PMFi8/FaRs5CcLmlgbjBRMHEHedAb34\nRX+CleCv1oueL7jZOWdSdqoAITS9C7n/dG+4J1kxpKEl8QF5O65YI7XIBQKBgQCI\nF/rroNJTtmV/SDjn73nBg2e3g/gQwGft1dFvv2FIKUZmEeqvUWec7u6cMFCL5KL+\nJxUlAk3qqAidiysM8iWPPGmEUZX/T8QrguClWxM05P1t7Ra91/svIfOYNxidE5fl\nC6yQjr54Qknr49HmU81bGsL3AkfTO2ZN0p8lUaz1KwKBgQCy4JMIxYnPfBBO0/FX\nD+vSWcmVKkh/l/hkBNmL+H9rwbH+phefoinVKnrJo4JXYQ60xnydzKct1c9TFjbL\nE4NVjurV9nEum9cbTkiOgKEqsmDV5Tk5VnfsuYjoIV5f7uEgc+fR5rnRm3e+L8aY\n9JEo9O3n6a2gTfZZBoGnIrx5Bw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-pz8l1@dentz-avenue-managment-system.iam.gserviceaccount.com",
+  "client_id": "107787059044038917246",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-pz8l1%40dentz-avenue-managment-system.iam.gserviceaccount.com"
+}

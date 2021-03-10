@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Dentz" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b968cfad-f1d9-4c70-a759-fbdad9863677">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="15b133cb-8db7-4841-9225-23b07e622fa6"/>
+	<subDataset name="Table Dataset 2" uuid="219075d8-a5a9-409e-9555-e4b3223b3972"/>
+	<subDataset name="Table Dataset 3" uuid="6654c1f9-699d-42d3-ba54-d70a64f70c73"/>
+	<subDataset name="Table Dataset 4" uuid="803fa0f0-fcb3-459a-918b-dc0e3b074576"/>
+	<subDataset name="New Dataset 1" uuid="aa21ae8d-eebc-4881-a2f3-b2fdce7668a4"/>
+	<parameter name="Name" class="java.lang.String"/>
+	<parameter name="Age" class="java.lang.String"/>
+	<parameter name="CONSULTATION" class="java.lang.String"/>
+	<parameter name="FILLINGS" class="java.lang.String"/>
+	<parameter name="EXTRACTIONS" class="java.lang.String"/>
+	<parameter name="FULL" class="java.lang.String"/>
+	<parameter name="ROOT" class="java.lang.String"/>
+	<parameter name="IMPLANTS" class="java.lang.String"/>
+	<parameter name="DENTAL" class="java.lang.String"/>
+	<parameter name="TEETH" class="java.lang.String"/>
+	<parameter name="INLAYS" class="java.lang.String"/>
+	<parameter name="ORTHODONTICS" class="java.lang.String"/>
+	<parameter name="OTHER" class="java.lang.String"/>
+	<parameter name="Total" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[age]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<sortField name="PAGE_NUMBER" type="Variable"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="111" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="221" height="111" uuid="aeb51ad7-302e-43a1-945d-95c71bd1cdec"/>
+				<imageExpression><![CDATA["C:\\Users\\MaC\\Documents\\NetBeansProjects\\Final\\Dentz_Avenue\\src\\img\\admin.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="378" y="0" width="14" height="16" uuid="8bd5b485-8a1e-437d-9b10-dac0d48fe7ef"/>
+				<imageExpression><![CDATA["C:\\Users\\MaC\\Documents\\NetBeansProjects\\Final\\Dentz_Avenue\\src\\img\\icons8-phone-48.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="402" y="0" width="100" height="12" uuid="1fcaff32-df99-417e-89d9-363cef15e330"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[011 7079088 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="12" width="100" height="12" uuid="90c04a96-69ff-4cb5-9a1c-a83ccdb222cc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[076 6512417 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="378" y="25" width="26" height="17" uuid="a522ecf4-94ea-44ed-b7e8-f2b2a7ef8bdc"/>
+				<imageExpression><![CDATA["C:\\Users\\MaC\\Documents\\NetBeansProjects\\Final\\Dentz_Avenue\\src\\img\\icons8-email-64.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="402" y="30" width="114" height="12" uuid="f9d605f1-1ccd-45f8-bce9-411278febcbd"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[info@dentzavenue.com ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="378" y="49" width="15" height="16" uuid="09b41a9b-288e-4193-8a04-a858658797b3"/>
+				<imageExpression><![CDATA["C:\\Users\\MaC\\Documents\\NetBeansProjects\\Final\\Dentz_Avenue\\src\\img\\icons8-internet-64.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="402" y="53" width="100" height="12" uuid="2e1dd400-c2de-4f00-ac74-71701eea252e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[www.Dentzavenue.com ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="378" y="76" width="19" height="20" uuid="25e95b70-55ca-4673-bbd2-46563b5eb56a"/>
+				<imageExpression><![CDATA["C:\\Users\\MaC\\Documents\\NetBeansProjects\\Final\\Dentz_Avenue\\src\\img\\icons8-user-location-100.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="402" y="76" width="139" height="35" uuid="a281e9d9-933b-47e2-bdce-5b21e83df8e5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[641//B, Bangala handiya,Pita Kotte, Kotte, Srilanka ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="353cb592-9d41-442f-957f-ef50ed2d6389"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="599" splitType="Stretch">
+			<staticText>
+				<reportElement x="35" y="35" width="31" height="20" uuid="12b062ac-885f-4ee4-8cdf-4df363428259"/>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="15" width="31" height="20" uuid="1578d582-eaec-4273-aa8c-6affae35d6a4"/>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="441" y="15" width="100" height="20" uuid="a955a797-8923-45a6-9752-0031a5c47e91"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="404" y="15" width="26" height="20" uuid="725318b1-9de2-4b1a-834e-9da3135e31f6"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="114" width="100" height="20" uuid="679d29ab-9d9d-488f-82d5-1f0b07e224b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUNT (Rs.)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="46" y="146" width="465" height="26" backcolor="#EAEAEA" uuid="8f6497d7-9477-4892-ae69-f94fd56866b1"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="198" width="465" height="26" backcolor="#EAEAEA" uuid="e0a0a0ae-5aac-46e5-9438-26de7880e5b9"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="250" width="465" height="26" backcolor="#EAEAEA" uuid="8c081c67-9b54-4c68-b54f-6ed579208119"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="302" width="465" height="26" backcolor="#EAEAEA" uuid="10ede35f-55e6-4139-9d07-460b52580ea1"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="354" width="465" height="26" backcolor="#EAEAEA" uuid="902c798a-6ad6-48d3-8f33-9ec19a130654"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="406" width="465" height="26" backcolor="#EAEAEA" uuid="dd1857df-a661-4541-9ca8-cff1203809d8"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="142" y="114" width="100" height="20" uuid="2964d99b-cee5-400f-8222-e6c86b61c9b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TREATMENT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="46" y="172" width="465" height="26" backcolor="#FFFFFF" uuid="70854f34-c403-4b7e-a6b4-63c9e90d16e4"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="224" width="465" height="26" backcolor="#FFFFFF" uuid="0bb73d4a-45cf-4b1c-9f38-988c98f3be55"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="276" width="465" height="26" backcolor="#FFFFFF" uuid="a2e60002-6e6b-4ac4-96ca-d3b4da925fb7"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="328" width="465" height="26" backcolor="#FFFFFF" uuid="13dac02e-a877-4dcb-8763-cc1d81c63783"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="46" y="380" width="465" height="26" backcolor="#FFFFFF" uuid="e0b73280-e9b6-49a3-9567-c42b45c5abb8"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="346" y="147" width="1" height="307" forecolor="#999999" uuid="bb0c93c9-2ef6-44cc-9e38-08739e82cbe8"/>
+			</line>
+			<staticText>
+				<reportElement x="142" y="146" width="100" height="26" uuid="83f1960a-6051-4681-99f3-8f90397a1658"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[CONSULTATION ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="46" y="146" width="465" height="1" forecolor="#999999" uuid="e8e13971-10eb-47ba-9263-daa80fae3b67"/>
+			</line>
+			<staticText>
+				<reportElement x="46" y="172" width="300" height="26" uuid="d4307d59-9562-4eac-8eb4-3c1246d43806"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ FILLINGS (TEMPORARY/ GIC/COMPOSITE/AMALGUM) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="198" width="100" height="26" uuid="fe78034c-1bd7-4a81-982b-03d14f2a042a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[EXTRACTIONS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="224" width="143" height="26" uuid="13d847d1-bb97-47f1-a9bd-121f3d4f6d85"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[FULL MOUTH SCALING ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="250" width="141" height="26" uuid="68a573a6-6258-400b-9e7d-c3a7e87d3bc7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ROOT CANAL TREATMENTS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="276" width="100" height="26" uuid="a3b2bcc7-23b0-45b8-a6bc-d26813ebaa25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[IMPLANTS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="302" width="210" height="26" uuid="922c92a5-0818-411d-85f2-b561679e91fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[DENTAL CROWNS/VENEERS/ BRIDGES ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="328" width="100" height="26" uuid="ace120ba-4211-4f1e-b7fd-a3e545b90b6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TEETH WHITENING ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="354" width="100" height="26" uuid="416418d8-5031-4010-9016-ba5510bcacc0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[INLAYS/ ONLAYS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="380" width="100" height="26" uuid="a62dd861-bec8-43c3-b445-a1d1262f5590"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ORTHODONTICS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="406" width="100" height="26" uuid="8fb90b79-fbd5-4972-a15a-fb3d8e4c20e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[OTHER ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="566" width="86" height="20" uuid="705ce60f-fd46-41fe-8202-49e29468523b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Signature ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="556" width="86" height="10" uuid="9934f428-b24f-4b3c-bda4-3cf385b61789"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="15" width="100" height="20" uuid="bf1c381c-5a61-49ca-8dcd-b3bfd3b33030"/>
+				<textFieldExpression><![CDATA[$P{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="35" width="100" height="20" uuid="91f6c32b-27c0-42b8-abcd-2871ccb2867a"/>
+				<textFieldExpression><![CDATA[$P{Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="146" width="100" height="25" uuid="c1562947-a600-4f3e-a018-6277e69dc6d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{CONSULTATION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="171" width="100" height="26" uuid="ecb0886e-fcd1-48cd-b2b9-0d31abd18e6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FILLINGS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="197" width="100" height="27" uuid="bad7ec89-00a6-4feb-b909-383534b70418"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{EXTRACTIONS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="224" width="100" height="26" uuid="d6e67dae-c8c9-45be-90e5-0c05523432ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FULL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="250" width="100" height="26" uuid="19fc4d13-984f-4b44-98fd-705ec4ff66a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{ROOT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="276" width="100" height="26" uuid="147e295d-e30d-4a28-b0b0-79df105b3524"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{IMPLANTS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="302" width="100" height="26" uuid="6eb2ab45-2856-4f91-8b5e-53f32d231f46"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{DENTAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="328" width="100" height="26" uuid="4e23c049-e73c-4eb0-9f97-f5ab503ce159"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TEETH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="354" width="100" height="26" uuid="a84cb1b0-1551-4237-8d60-1cd89a5de6a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{INLAYS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="380" width="100" height="26" uuid="a3e46633-6b1a-4ede-8039-1f7ccb8d0f93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{ORTHODONTICS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="406" width="100" height="26" uuid="c41e0f57-e3a3-4f6a-8a67-4a1f7e40f5db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{OTHER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="46" y="432" width="465" height="1" forecolor="#999999" uuid="c604a641-0c5d-43b4-b3f0-88529a384c1e"/>
+			</line>
+			<line>
+				<reportElement x="46" y="454" width="465" height="1" forecolor="#999999" uuid="2d3764a7-f1bf-4729-a47f-c903bcde0196"/>
+			</line>
+			<staticText>
+				<reportElement x="142" y="433" width="100" height="21" uuid="20f4bcee-04a5-4a07-8e78-a2e9af992f19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="378" y="434" width="100" height="20" uuid="12c7ba99-256c-430a-9b57-501f827d59e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
